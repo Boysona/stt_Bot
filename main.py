@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # === CONFIG ===
 TOKEN = "7790991731:AAF4NHGm0BJCf08JTdBaUWKzwfs82_Y9Ecw"
 ADMIN_ID = 6964068910
-WEBHOOK_URL = "likely-adrianna-zarwga-c22b6ccc.koyeb.app/"
+WEBHOOK_URL = "https://stt-bot-ckt1.onrender.com"
 REQUIRED_CHANNEL = ""
 
 ASSEMBLYAI_API_KEY = "8615e9f175fc4a71bd2cff5af9eca989"
