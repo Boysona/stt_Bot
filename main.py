@@ -22,7 +22,7 @@ ADMIN_ID = 6964068910
 WEBHOOK_URL = "https://stt-bot-ckt1.onrender.com"
 REQUIRED_CHANNEL = ""
 
-ASSEMBLYAI_API_KEY = "8615e9f175fc4a71bd2cff5af9eca989"
+ASSEMBLYAI_API_KEY = "b07239215b60433b8e225e7fd8ef6576"
 GEMINI_API_KEY = "AIzaSyDpb3UvnrRgk6Fu61za_VrRN8byZRSyq_I"
 
 # MongoDB Configuration
