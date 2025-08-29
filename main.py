@@ -531,7 +531,7 @@ async def process_stt_media(chat_id: int, user_id_for_settings: str, message_typ
     except Exception as e:
         logging.exception(f"Unhandled error during STT processing: {e}")
         try:
-            target_bot.send_message(chat_id, "⚠️ The file is too large. Send one smaller 20MB.", reply_to_message_id=original_message_id)
+            target_bot.send_message(chat_id, "⚠️ The file is too large. Please send one smaller than 20MB.", reply_to_message_id=original_message_id)
         except Exception:
             pass
     finally:
@@ -588,8 +588,8 @@ async def process_stt_media_url(chat_id: int, user_id_for_settings: str, url: st
                 threading.Thread(target=delete_transcription_later, args=(user_id_for_settings, original_message_id), daemon=True).start()
                 markup = InlineKeyboardMarkup()
                 markup.add(
-                    InlineKeyboardButton("🌍 Translate", callback_data=f"btn_translate|{original_message_id}"),
-                    InlineKeyboardButton("📝 Summarize", callback_data=f"btn_summarize|{original_message_id}")
+                    InlineKeyboardButton("Translate", callback_data=f"btn_translate|{original_message_id}"),
+                    InlineKeyboardButton("Summarize", callback_data=f"btn_summarize|{original_message_id}")
                 )
                 f = io.BytesIO(text.encode("utf-8"))
                 f.name = "transcript.txt"
