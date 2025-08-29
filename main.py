@@ -459,7 +459,7 @@ def broadcast_message(message):
 async def process_stt_media(chat_id: int, user_id_for_settings: str, message_type: str, file_id: str, target_bot: telebot.TeleBot, original_message_id: int):
     processing_msg = None
     try:
-        processing_msg = target_bot.send_message(chat_id, "⏳ Processing...", reply_to_message_id=original_message_id)
+        processing_msg = target_bot.send_message(chat_id, "🔄 Processing...", reply_to_message_id=original_message_id)
         file_info = target_bot.get_file(file_id)
 
         file_url = f"https://api.telegram.org/file/bot{TOKEN}/{file_info.file_path}"
@@ -531,7 +531,7 @@ async def process_stt_media(chat_id: int, user_id_for_settings: str, message_typ
     except Exception as e:
         logging.exception(f"Unhandled error during STT processing: {e}")
         try:
-            target_bot.send_message(chat_id, "⚠️ The file is too large. Send one smaller than 20MB.", reply_to_message_id=original_message_id)
+            target_bot.send_message(chat_id, "⚠️ The file is too large. Send one smaller 20MB.", reply_to_message_id=original_message_id)
         except Exception:
             pass
     finally:
