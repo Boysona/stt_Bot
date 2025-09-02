@@ -23,7 +23,7 @@ MONGO_URI = "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.ne
 DB_NAME = "telegram_bot_db"
 
 # ADMIN PASSWORD stored in code (change this to your own secret)
-ADMIN_PASSWORD = "admin_secret_123"
+ADMIN_PASSWORD = "Cadaani8800"
 
 # secret for signing upload links (change to a strong random string in production)
 SECRET_KEY = "super-secret-please-change"
