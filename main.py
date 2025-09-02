@@ -169,7 +169,7 @@ def animate_processing_message(chat_id, message_id, stop_event):
     """
     Edits a message to animate dots until stop_event() is true.
     """
-    dots = [".", " ..", " ..."]
+    dots = [".", "..", "..."]
     idx = 0
     while not stop_event():
         try:
