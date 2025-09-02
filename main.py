@@ -184,7 +184,7 @@ def send_welcome_message(message):
     chat_id = message.chat.id
     first_name = message.from_user.first_name if message.from_user else "Friend"
     text = (
-        f"👋 Salom!\n"
+        f"👋 Salaam! dear\n"
         "• Sand me\n"
         "• voice message\n"
         "• audio file\n"
@@ -234,7 +234,7 @@ def handle_lang_callback(call):
     send_welcome_message(call.message)
     
     # Answer the callback query to remove the "loading" state on the button
-    bot.answer_callback_query(call.id, f"✅Language set to {lang_code}")
+    bot.answer_callback_query(call.id, f"you set to {lang_name}")
 
 # Main handler for media messages
 @bot.message_handler(content_types=['voice', 'audio', 'video', 'document'])
