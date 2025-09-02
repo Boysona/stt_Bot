@@ -224,7 +224,7 @@ def send_welcome_message(message):
     chat_id = message.chat.id
     first_name = message.from_user.first_name if message.from_user else "Friend"
     text = (
-        f"👋 Salaam {first_name}!\n\n"
+        f"👋 Welcome to {first_name}!\n\n"
         "• Send me a voice message\n"
         "• audio file\n"
         "• video\n"
