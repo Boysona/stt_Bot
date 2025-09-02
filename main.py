@@ -465,7 +465,7 @@ def start_select_lang_callback(call):
 
         # Send welcome message
         welcome_text = (
-            f"👋 Salaam! dear\n"
+            f"👋 Salaam!    \n"
             "• Send me\n"
             "• voice message\n"
             "• audio file\n"
