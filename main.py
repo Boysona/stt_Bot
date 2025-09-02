@@ -234,7 +234,7 @@ def handle_lang_callback(call):
     send_welcome_message(call.message)
     
     # Answer the callback query to remove the "loading" state on the button
-    bot.answer_callback_query(call.id, f"you set to {lang_name}")
+    bot.answer_callback_query(call.id, f"✅ you set to {lang_code}")
 
 # Main handler for media messages
 @bot.message_handler(content_types=['voice', 'audio', 'video', 'document'])
