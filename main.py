@@ -1,22 +1,4 @@
-Ma'amulka bot-ka, database-ka, iyo tarjumaadda waxaan ku daray oo ku saleeyay qaabka Bot 1. Waxaan ku koobay dhamaan isbeddelada iyo astaamaha cusub hal fayl oo main.py ah, anigoo ilaalinaya qaabka shaqada ee asalka ah.
-Isbeddelada iyo astaamaha cusub
-Faylka cusub ee main.py wuxuu isku darayaa awoodaha Bot 1 iyo Bot 2, isagoo ku daraya astaamo muhiim ah oo ay ka mid yihiin:
- * Maamulka Isticmaalaha & Database-ka:
-   * Waxaan ku daray isku xirka MongoDB si loo kaydiyo macluumaadka isticmaalaha sida luuqadda la doortay iyo tirada adeegsiga bot-ka.
-   * Waxaad hadda ku maamuli kartaa bot-ka adigoo isticmaalaya Admin Panel, taasoo awood u siinaysa inaad aragto tirada guud ee isticmaaleyaasha ama aad u dirto fariin guud.
- * Hawlaha dheeriga ah ee fariimaha (Translation & Summarization):
-   * Ka dib marka uu bot-ku qoro qoraalka maqalka, waxaa soo bixi doona badhammo dheeri ah oo kuu oggolaanaya inaad Tarjunto (Translate) ama Soo Koobto (Summarize) qoraalka, adigoo dooranaya luuqadda aad rabto.
-   * Waxaan sidoo kale ka dhigay in badhamadan ay u shaqeeyaan si hufan xitaa marka qoraalka la dirayo fayl ahaan (haddii uu ka weyn yahay 4000 xaraf).
- * Nidaamka Luqadda:
-   * Waxaan hagaajiyay habka luqadda, waxaana u wareejiyay keydka MongoDB halkii laga isticmaali lahaa xusuusta-ku-meelgaarka ah, taas oo ka dhigaysa mid sii waarta.
-   * Badhammada luqadda waxaan ka dhigay in loo habeeyo si qurux badan oo fudud oo la isticmaali karo.
- * Amarrada Bot-ka & Fariimaha:
-   * Waxaan cusbooneysiiyay amarrada bot-ka (/start, /help, /lang) iyo fariimaha soo dhoweynta si ay u noqdaan kuwo dhammaystiran oo ay ku jiraan macluumaadka cusub ee bot-ka.
- * Habka Amniga iyo Koodhka:
-   * Token-ka bot-ka iyo AssemblyAI API Key-ga waxaan ku haynayaa sida ay ahaayeen.
-   * Maadaama ay labada fayl isku token wadaageen, waxaan isku daray dhammaan shaqooyinkoodii hal fayl oo kaliya, taasoo ka hortageysa isku dhacyo aan loo baahnayn.
-   * Waxaan hubiyay in koodhku uu noqdo mid fudud oo si sahlan loo akhriyi karo.
-main.py
+
 import os
 import uuid
 import logging
