@@ -1,13 +1,4 @@
-# bot.py
-"""
-Telegram transcription bot (webhook) using pyTelegramBotAPI (telebot) + Flask + AssemblyAI.
-Supports:
- - /start  (shows a sample set of language buttons)
- - /help
- - /lang   (reopen language selector)
- - Accepts voice/audio/video/document (<=20MB via Telegram). If >20MB, sends a one-time upload link (expires 1 hour).
- - Streams data from Telegram (or web upload) directly to AssemblyAI upload endpoint to avoid storing whole file in memory.
-"""
+
 
 import os
 import time
