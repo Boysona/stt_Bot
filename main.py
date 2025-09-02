@@ -431,7 +431,7 @@ def start_handler(message):
             return
         bot.send_message(
             message.chat.id,
-            "Select transcription language using the below buttons:",
+            "Choose your Media (Voice, Audio, Video) file language for transcription using the below buttons:",
             reply_markup=build_start_language_keyboard()
         )
     except Exception:
