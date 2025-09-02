@@ -15,7 +15,7 @@ from pymongo import MongoClient
 ASSEMBLYAI_API_KEY = "b07239215b60433b8e225e7fd8ef6576"
 WEBHOOK_BASE = "https://stt-bot-ckt1.onrender.com"   # your webhook base (render URL)
 BOT_TOKEN = "7790991731:AAF4NHGm0BJC08JTdBaUWKzwfs82_Y9Ecw"
-ADMIN_PASSWORD = "your_admin_password_here" # Change this to your desired admin password
+ADMIN_PASSWORD = "Cadaani8800" # Change this to your desired admin password
 
 MONGO_URI = "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "telegram_bot_db"
