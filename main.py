@@ -344,7 +344,7 @@ def send_subscription_message(chat_id: int):
         )
         bot.send_message(
             chat_id,
-            "🔒 Access Locked. To use this Bot, please join our group first. Tap the button below to join and then send /start.",
+            "🔒 Access Locked You cannot use this bot until you join the group",
             reply_markup=markup
         )
 
@@ -357,7 +357,7 @@ def start_handler(message):
             return
         bot.send_message(
             message.chat.id,
-            "Choose your Media (Voice, Audio, Video) file language for transcription using the below buttons:",
+            "Choose your file language for transcription using the below buttons:",
             reply_markup=build_start_language_keyboard()
         )
     except Exception:
@@ -578,7 +578,7 @@ def handle_media_common(message, target_bot: telebot.TeleBot):
         error_msg = str(e)
         logging.exception("Error in transcription process")
         if is_transcoding_like_error(error_msg):
-            bot.send_message(message.chat.id, "❌ Transcription error: The file format is not supported or the file is not audible. Please send a different file.", reply_to_message_id=message.message_id)
+            bot.send_message(message.chat.id, "⚠️ Transcription error: file is not audible. Please send a different file.", reply_to_message_id=message.message_id)
         else:
             bot.send_message(message.chat.id, f"Error during transcription: {error_msg}", reply_to_message_id=message.message_id)
     finally:
@@ -602,7 +602,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>🎙️ AI Speech Studio</title>
+    <title> 👅 Media to Text Bot Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <style>
@@ -944,7 +944,7 @@ def upload_large_file(token):
     if not file:
         return "No file uploaded", 400
     file_bytes = file.read()
-    upload_msg = bot.send_message(chat_id, f"📥 File uploaded successfully. Your transcription will be sent once it's ready. You can close this tab.")
+    upload_msg = bot.send_message(chat_id, f"📥 File uploaded successfully. Your transcription will be sent once it's ready.")
     upload_msg_id = upload_msg.message_id
     def bytes_gen(b):
         chunk_size = 256*1024
