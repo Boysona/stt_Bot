@@ -22,7 +22,7 @@ ASSEMBLYAI_API_KEY = "401f03e8f03c4519b603c896973b41e5"
 BOT_TOKEN = "7790991731:AAF4NHGm0BJCf08JTdBaUWKzwfs82_Y9Ecw"
 WEBHOOK_BASE = "https://stt-bot-ckt1.onrender.com"
 ADMIN_ID = 6964068910
-REQUIRED_CHANNEL = "@boyso20"
+REQUIRED_CHANNEL = "@boyso20Channel"
 SECRET_KEY = "super-secret-please-change"
 TELEGRAM_MAX_BYTES = 20 * 1024 * 1024
 MONGO_URI = "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
