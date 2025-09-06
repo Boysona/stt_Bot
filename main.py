@@ -240,7 +240,7 @@ def select_speech_model_for_lang(language_code: str):
     lc = language_code.lower()
     if lc.startswith("en"):
         return "slam-1"
-    return "best"
+    return "universal"
 
 def create_transcript_and_wait(audio_url: str, language_code: str = None, speech_model: str = None, poll_interval=2):
     create_url = "https://api.assemblyai.com/v2/transcript"
