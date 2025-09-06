@@ -236,7 +236,7 @@ def assemblyai_upload_from_stream(stream_iterable):
 
 def select_speech_model_for_lang(language_code: str):
     if not language_code:
-        return "best"
+        return "universal"
     lc = language_code.lower()
     if lc.startswith("en"):
         return "slam-1"
