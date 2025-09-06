@@ -19,7 +19,7 @@ import traceback
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 GEMINI_API_KEY = "AIzaSyDpb3UvnrRgk6Fu61za_VrRN8byZRSyq_I"
-ASSEMBLYAI_API_KEY = "401f03e8f03c4519b603c896973b41e5"
+ASSEMBLYAI_API_KEY = "c9a9146fb91b4801a58577b07246eeff"
 BOT_TOKEN = "7790991731:AAF4NHGm0BJCf08JTdBaUWKzwfs82_Y9Ecw"
 WEBHOOK_BASE = "https://stt-bot-ckt1.onrender.com"
 ADMIN_ID = 6964068910
